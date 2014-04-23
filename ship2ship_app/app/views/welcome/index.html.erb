@@ -1,0 +1,9 @@
+<h2>Welcome</h2>
+
+<%= form_for @message do |f| %>
+  <%= f.label :title %>:
+  <%= f.text_field :title %><br />
+  <%= f.label :body %>:
+  <%= f.text_field :body %><br />
+  <%= f.submit "Add Message" %>
+<% end %>
