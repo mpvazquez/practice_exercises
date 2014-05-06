@@ -12,10 +12,16 @@ var Animal = Backbone.Model.extend({
 
 var animalView = Backbone.View.extend({
   el: "#animalView",
+  initialize: function(){
+    this.listenTo(this.model, "invalid", this.displayErrors);
+  },
   events: {
     "click #new-animal": "newAnimal"
   },
-
+  displayErrors: function() {
+    console.log("error");
+    var error = $("<p>").text(this.model.validate);
+  },
   newAnimal: function(event){
     console.log("new animal");
     var animalName = this.$('input').val();
@@ -24,7 +30,7 @@ var animalView = Backbone.View.extend({
 });
 
 $(document).ready(function(){
-  view = new animalView({model: new Animal()})
+  view = new animalView({model: new Animal() });
 })
 
 // //Model
