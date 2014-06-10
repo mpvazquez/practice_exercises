@@ -19,10 +19,9 @@ class Algorithm
     next_number = @array[1]
     following_numbers = []
 
-    if next_number % first_num == 0
-      quotient = next_number / first_num
+    if Math.sqrt(next_number) == first_num
       10.times do |i|
-        result = next_number * quotient
+        result = next_number ** 2
         following_numbers << result
         next_number = result
       end
@@ -36,12 +35,14 @@ class Algorithm
         next_number = result
       end
       puts following_numbers.to_s
-    elsif Math.sqrt(next_number) == first_num
+    elsif next_number % first_num == 0
+      quotient = next_number / first_num
       10.times do |i|
-        result = next_number ** 2
+        result = next_number * quotient
         following_numbers << result
         next_number = result
       end
+      puts following_numbers.to_s
     end
   end
 end
