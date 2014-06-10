@@ -19,14 +19,14 @@ class Algorithm
 
     if next_number % first_num == 0
       divisor = next_number / first_num
-      8.times do |i|
+      10.times do |i|
         result = next_number * divisor
         following_numbers << result
         next_number = result
       end
       puts following_numbers.to_s
     elsif Math.sqrt(next_number) == first_num
-      8.times do |i|
+      10.times do |i|
         result = next_number ** 2
         following_numbers << result
         next_number = result
