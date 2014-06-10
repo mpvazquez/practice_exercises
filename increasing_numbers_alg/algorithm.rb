@@ -1,3 +1,5 @@
+######## RUBY ########
+
 require 'pry'
 
 class Algorithm
@@ -18,9 +20,18 @@ class Algorithm
     following_numbers = []
 
     if next_number % first_num == 0
-      divisor = next_number / first_num
+      quotient = next_number / first_num
       10.times do |i|
-        result = next_number * divisor
+        result = next_number * quotient
+        following_numbers << result
+        next_number = result
+      end
+      puts following_numbers.to_s
+    elsif next_number % first_num != 0
+      remainder = next_number % first_num
+      quotient = (next_number - remainder) / first_num 
+      10.times do |i|
+        result = (next_number * quotient) + remainder
         following_numbers << result
         next_number = result
       end
