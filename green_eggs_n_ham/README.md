@@ -7,5 +7,5 @@ Using the built in method (`save_as filename, contents`) and string (`txt`) prov
 3. Create a file, "sammy_jam", in which all instances of Sam-I-Am to "Sammy Jam." (We're talking .gsub baby!)
 4. Create a new file, "affirmative", in which the narrator constantly agrees to eat (ie, remove the nots).
 5. Create a new file, "matt", where "Sam" is "Matt," and is referred to as "Matt-I-Say", and the narrator is being forced to eat "coconut oil and lamb".
-***bonus***
-6. List all of the sentences that are repeated twice in a row in a file "repeats". This way you can prove to the narrator that he has a problem and should see a doctor before his dimentia gets worse.
+
+6. (***BONUS***) List all of the sentences that are repeated twice in a row in a file "repeats". This way you can prove to the narrator that he has a problem and should see a doctor before his dimentia gets worse.

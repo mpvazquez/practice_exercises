@@ -15,4 +15,8 @@ f = File.new "seuss.txt", "r"
 text = f.read
 f.close
 
-binding.pry
+binding.pry 
+
+p text.scan(/Sam[^-]/).count
+# save_as( 'list.txt', text.scan(/(?:a)\s(\w+)/).uniq.flatten! )
+
