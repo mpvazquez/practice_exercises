@@ -22,5 +22,7 @@ binding.pry
 p text.scan(/Sam[^-]/).count
 save_as( 'list.txt', text.scan(/(?:a)\s(\w+)/).uniq.flatten! )
 save_as( 'sammy_jam.txt', text.gsub("Sam-I-am", "Sammy Jam"))
+save_as( 'affirmative.txt', text.gsub(/(not\s|\snot)/i, ""))
+save_as( 'matt.txt', text.gsub(/(Sam)/, "Matt").gsub(/(green eggs and ham)/, "coconut oil and lamb"))
 
 
