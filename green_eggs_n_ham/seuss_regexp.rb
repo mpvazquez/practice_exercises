@@ -17,6 +17,10 @@ f.close
 
 binding.pry 
 
+# Begin commands from README.md
+
 p text.scan(/Sam[^-]/).count
-# save_as( 'list.txt', text.scan(/(?:a)\s(\w+)/).uniq.flatten! )
+save_as( 'list.txt', text.scan(/(?:a)\s(\w+)/).uniq.flatten! )
+save_as( 'sammy_jam.txt', text.gsub("Sam-I-am", "Sammy Jam"))
+
 
