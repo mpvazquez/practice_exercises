@@ -1,1 +1,6 @@
-<h1>Pokemon Love</h1>
+<button>View Favorites</button>
+<% counter = 0 %>
+<% 50.times do %>
+  <h2><%= @all_pokemon[counter]['name'].capitalize %></h2>
+  <% counter += 1%>
+<% end %>

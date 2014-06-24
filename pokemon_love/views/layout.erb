@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <title>Pokemon Love</title>
   <link rel="stylesheet" href="/styles.css">
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="/pokemon.png" />
-  </header>
-  <%= yield %>
+  <div class="page-wrapper">
+    <header>
+      <img src="/pokemon.png" />
+    </header>
+    <%= yield %>
+  </div>
 </body>
 </html>
