@@ -1,6 +1,11 @@
-<button>View Favorites</button>
+<button id="view-faves">View Favorites</button>
+<div class="faves-list">
+  <ul id="favoritePokemonList"></ul>
+</div>
+
 <% counter = 0 %>
 <% 50.times do %>
-  <h2><%= @all_pokemon[counter]['name'].capitalize %></h2>
+  <h2><%= @all_pokemon[counter]['name'].capitalize %>
+    <a class="add-fave" id="<%= @all_pokemon[counter]['name'] %>" href="#">+</a></h2>
   <% counter += 1%>
 <% end %>
